@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Validação utilizando expressão regular e sua mensagem de validação.</title>
+</head>
+<body>
+
+<form action="demo_form.asp">
+    UF: <input type="text" name="uf" pattern="[A-Z]{2}" title="a UF deve ser composta de duas letras maiúsculas.">
+    <input type="submit" value="Confirma UF">
+
+</form>
+<p>
+<form action="qualquer_coisa.asp">
+    Data de nascimento: <input type="date" name="nasc"><br>
+    <input type="range" name="pontos" step="3" min="-10" max="10" value="-10"><br>
+    Select your favorite color:<br>
+    <input type="color" name="favcolor"><br>
+    Quantity:<br>
+    <input type="number" name="points" min="0" max="100" step="10" value="30"><br>
+    Search Google:<br>
+    <input type="search" name="googlesearch"><br>
+    Telephone:<br>
+    <input type="tel" name="usrtel"><br>
+    <br><br><br>
+    <input type="button" onclick="alert('Hello World!')" value="Click Me!">
+    <input type="submit" value="Valida data">
+</form>
+</p>
+
+
+</body>
+</html>
